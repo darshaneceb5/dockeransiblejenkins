@@ -8,7 +8,7 @@
         name: python-pip
         state: present
     - name: Install docker
-      yum:
+      apt:
         name: docker
         state: present
     - name: start docker
