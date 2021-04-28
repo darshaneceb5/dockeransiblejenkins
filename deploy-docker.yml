@@ -7,8 +7,10 @@
         name: python3
         state: present
     - name: Upgrade pip
-      pip: name=pip state=latest
-        tags:
+      pip: 
+        name: pip 
+        state: latest
+      tags:
           - packages
     - name: Install docker
       yum:
