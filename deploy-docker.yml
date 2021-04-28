@@ -22,7 +22,7 @@
         state: present
     - name: Start the container
       docker_container:
-        name: hariapp
+        name: dvenkatjava
         image: "darshanvenkat07/dvenkatjava:latest"
         state: started
         published_ports:
