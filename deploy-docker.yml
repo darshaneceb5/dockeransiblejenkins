@@ -4,9 +4,9 @@
   become: True
   tasks:
     - name: Install python pip
-      apt:
-        name: python-pip
-        state: present
+      command: sudo apt install python3-pip
+       # name: python-pip
+       # state: present
     - name: Install docker
       apt:
         name: docker
